@@ -1,0 +1,3 @@
+[workspace]
+members = ["tonic-core", "tonic-python", "tonic-bench"]
+resolver = "2"

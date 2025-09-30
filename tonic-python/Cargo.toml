@@ -1,0 +1,13 @@
+[package]
+name = "tonic-python"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "tonic_python"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module", "abi3", "abi3-py38"] }
+numpy = "0.20"
+tonic-core = { path = "../tonic-core" }

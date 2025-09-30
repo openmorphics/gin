@@ -1,0 +1,23 @@
+[package]
+name = "tonic-bench"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "Criterion microbenchmarks for tonic-core kernels"
+
+[dev-dependencies]
+criterion = "0.5"
+rand = "0.8"
+tonic-core = { path = "../tonic-core" }
+
+[[bench]]
+name = "voxel_grid_bench"
+harness = false
+
+[[bench]]
+name = "frame_bench"
+harness = false
+
+[[bench]]
+name = "time_surface_bench"
+harness = false

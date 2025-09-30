@@ -1,0 +1,14 @@
+[build-system]
+requires = ["maturin>=1,<2"]
+build-backend = "maturin"
+
+[project]
+name = "tonic_python"
+dynamic = ["version"]
+requires-python = ">=3.8"
+description = "Python bindings for tonic-rs core kernels (voxel grid, frames, time surface, denoise, decimate)"
+authors = [{ name = "Tonic RS Maintainers" }]
+
+[tool.maturin]
+bindings = "pyo3-abi3"
+module-name = "tonic_python"

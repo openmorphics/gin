@@ -1,0 +1,23 @@
+[package]
+name = "tonic-core"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Core CPU kernels for Tonic Rust rewrite"
+
+[lib]
+name = "tonic_core"
+path = "src/lib.rs"
+
+[features]
+default = []
+simd = []
+
+[dependencies]
+ndarray = "0.15"
+num-traits = "0.2"
+itertools = "0.12"
+
+[dev-dependencies]
+anyhow = "1"
+proptest = "1"
